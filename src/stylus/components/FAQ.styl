@@ -1,0 +1,32 @@
+.FAQ
+  margin-top: 150px
+  &__wrapper
+    background: $color-bg-secondary
+    border-radius: 40px
+    position relative
+    z-index 3
+    padding: 50px
+  
+  &__title
+    font-weight: 600
+    font-size: 60px
+    line-height: 1
+    text-align: center
+    color: #fff
+    margin-top 15px
+  
+  &__question-wrapper
+    border-bottom: 1px solid $color-tertiary
+    padding-top 20px
+    position: relative
+    &:before
+      content: 'v'
+      position: absolute
+      top: 40px
+      right: 15px
+      font-size: 14px
+      font-weight: 800
+
+  &__response
+    color $color-primary
+    font-style: italic

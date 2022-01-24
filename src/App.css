@@ -150,3 +150,38 @@ button {
 .c-button:hover {
   background: none;
 }
+.FAQ {
+  margin-top: 150px;
+}
+.FAQ__wrapper {
+  background: #323946;
+  border-radius: 40px;
+  position: relative;
+  z-index: 3;
+  padding: 50px;
+}
+.FAQ__title {
+  font-weight: 600;
+  font-size: 60px;
+  line-height: 1;
+  text-align: center;
+  color: #fff;
+  margin-top: 15px;
+}
+.FAQ__question-wrapper {
+  border-bottom: 1px solid #6e757c;
+  padding-top: 20px;
+  position: relative;
+}
+.FAQ__question-wrapper:before {
+  content: 'v';
+  position: absolute;
+  top: 40px;
+  right: 15px;
+  font-size: 14px;
+  font-weight: 800;
+}
+.FAQ__response {
+  color: #f9c75a;
+  font-style: italic;
+}
