@@ -1,7 +1,10 @@
 // import React, { useState, Fragment } from "react";
 import React from "react";
 import { Button } from "../components/Button";
-import Armadillo from "../assets/armadillo2.png";
+import Armadillo from "../assets/armadillo.png";
+import ParchePirata from "../assets/parche-pirata.png";
+import PlayeraPeru from "../assets/playera-peru.png";
+import SombreroDuende from "../assets/sombrero-duende.png";
 
 export function Description() {
   // const [idTab, setIdTab] = useState('buy');
@@ -10,7 +13,12 @@ export function Description() {
     <div className="Description o-wrapper">
       <div className="Description__wrapper">
 
-        <img className="Description__image" src={Armadillo} alt="Logo" />
+        <figure className="Description__figure">
+          <img className="Description__image" src={Armadillo} alt="Armadillo" />
+          <img className="Description__image" src={ParchePirata} alt="Parche Pirata" />
+          <img className="Description__image" src={PlayeraPeru} alt="Playera Peru" />
+          <img className="Description__image" src={SombreroDuende} alt="Sombrero Duende" />
+        </figure>
 
         <div className="Description__content">
           <p className="Description__paragraph">

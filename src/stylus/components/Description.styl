@@ -8,8 +8,50 @@
     display: flex
     align-items: center
     padding: 0 50px
-  &__image
+  &__figure
     position: relative
     bottom: 30px
+    max-width: 500px
+    width: 40%
+    display: block
+  &__image
+    position: absolute
+    top: 0
+    left: 0
+    display: none
+    animation-name: pulse;
+    animation-duration: 7s;
+    animation-iteration-count: infinite;
+  &__image:nth-child(1)
+    position: relative
+    display: block
+    animation-name: none;
+  &__image:nth-child(2)
+    display: block
+  &__image:nth-child(3)
+    display: block
+    animation-delay: 2s
+  &__image:nth-child(4)
+    display: block
+    animation-delay: 4s
   &__content
     padding-left 30px
+
+@keyframes pulse {
+  0% {
+    opacity: 0;
+  }
+  20% {
+    opacity: 0;
+  }
+  50% {
+    opacity: 1;
+  }
+  80% {
+    opacity: 0;
+  }
+
+  100% {
+    opacity: 0;
+  }
+}

@@ -125,12 +125,80 @@ button {
   align-items: center;
   padding: 0 50px;
 }
-.Description__image {
+.Description__figure {
   position: relative;
   bottom: 30px;
+  max-width: 500px;
+  width: 40%;
+  display: block;
+}
+.Description__image {
+  position: absolute;
+  top: 0;
+  left: 0;
+  display: none;
+  -webkit-animation-name: pulse;
+          animation-name: pulse;
+  -webkit-animation-duration: 7s;
+          animation-duration: 7s;
+  -webkit-animation-iteration-count: infinite;
+          animation-iteration-count: infinite;
+}
+.Description__image:nth-child(1) {
+  position: relative;
+  display: block;
+  -webkit-animation-name: none;
+          animation-name: none;
+}
+.Description__image:nth-child(2) {
+  display: block;
+}
+.Description__image:nth-child(3) {
+  display: block;
+  -webkit-animation-delay: 2s;
+          animation-delay: 2s;
+}
+.Description__image:nth-child(4) {
+  display: block;
+  -webkit-animation-delay: 4s;
+          animation-delay: 4s;
 }
 .Description__content {
   padding-left: 30px;
+}
+@-webkit-keyframes pulse {
+  0% {
+    opacity: 0;
+  }
+  20% {
+    opacity: 0;
+  }
+  50% {
+    opacity: 1;
+  }
+  80% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 0;
+  }
+}
+@keyframes pulse {
+  0% {
+    opacity: 0;
+  }
+  20% {
+    opacity: 0;
+  }
+  50% {
+    opacity: 1;
+  }
+  80% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 0;
+  }
 }
 .c-button {
   display: inline-flex;
