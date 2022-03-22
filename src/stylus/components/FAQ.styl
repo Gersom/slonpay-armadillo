@@ -22,11 +22,26 @@
     &:before
       content: 'v'
       position: absolute
-      top: 40px
+      top: 35px
       right: 15px
       font-size: 14px
       font-weight: 800
+  
+  &__question
+    display: block
+    width: 100%
+    height: 50px
+    display: flex
+    align-items: center
+    cursor: pointer
+    border: none
 
   &__response
     color $color-primary
     font-style: italic
+    height: 0
+    overflow: hidden
+    transition: 1s ease all
+
+  &__response.is-open
+    height: 150px
